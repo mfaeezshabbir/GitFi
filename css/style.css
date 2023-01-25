@@ -1,18 +1,25 @@
-
 * {
   margin: 0;
   padding: 0;
   /* font-family: "Roboto"; */
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
 
 body {
   background-color: #eee;
   background: #141d26;
 }
-.container .input_wrapper .btn_submit{
-  background-color:#10dd81;
-  color:#fdfbfb;
+.container .input_wrapper .btn_submit {
+  background-color: #10dd81;
+  color: #fdfbfb;
+}
+.input_wrapper:hover .btn_submit {
+  color: #10dd81;
+  background-color: #fdfbfb;
+}
+.input_wrapper:hover .input_user {
+  background-color: #10dd81;
+  color: #fdfbfb;
 }
 .container {
   width: 100%;
@@ -49,7 +56,7 @@ body {
   border-radius: 50%;
   border: 1px solid #000;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container .row .repo {
@@ -67,9 +74,12 @@ body {
   font-size: 16px;
   font-weight: normal;
   margin: 0;
+  padding: 0;
+  color: #141d26;
 }
 
 .user_name h1 {
+  color: #141d26;
   font-size: 25px;
   margin: 5px 0;
 }
@@ -81,6 +91,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 25px;
+  color: #141d26;
 }
 
 .follow .item p {
@@ -111,8 +122,8 @@ body {
 }
 
 .repo .repo_details {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   gap: 15;
   flex-wrap: wrap;
 }
@@ -166,10 +177,13 @@ body {
   border: none;
   padding: 5px 160px 5px 15px;
   box-sizing: border-box;
+  color: #10dd81;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .input_wrapper .input_user::placeholder {
-  color: #bdbdbd;
+  color: #141d2676;
 }
 
 .input_wrapper .input_user:focus {
@@ -188,9 +202,8 @@ body {
   background-color: #000;
   color: #fff;
   cursor: pointer;
-  text-transform: uppercase;
 }
-.author{
+.author a {
   margin: auto;
   width: 100%;
   display: flex;
@@ -198,7 +211,7 @@ body {
   align-items: center;
   opacity: 50%;
   color: #10dd81;
-  /* font-size: 14px; */
   font-weight: bold;
   transform: translateY(20px);
+  text-decoration: none;
 }
